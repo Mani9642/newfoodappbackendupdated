@@ -16,6 +16,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins("*")
+                        .allowedOrigins("https://linux-be.azurewebsites.net/restaurants/list?q=&sortBy=featured&perPage=9&page=1")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
